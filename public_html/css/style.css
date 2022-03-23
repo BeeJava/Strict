@@ -1,0 +1,325 @@
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #2D3950;
+    letter-spacing: 0.25px;
+}
+
+.placeholder-picture{
+    position: relative;
+    overflow: hidden;
+}
+.img-placeholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*header start*/
+header{
+    background-color: #F6F9F9;
+    padding: 10px 0 10px;
+}
+header .navbar-light .navbar-brand span{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #2D3950;
+    letter-spacing: 0.25px;
+}
+
+header .navbar-light .navbar-nav .nav-link{
+    font-family: 'Arial';
+    font-size: 18px;
+    line-height: 2rem;
+    letter-spacing: 0.75px;
+    color: #000;
+    text-transform: uppercase;
+}
+header .navbar-toggler span{
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+    transition: 0.3s linear;
+}
+header .navbar-toggler span:not(:last-of-type){
+    margin-bottom: 8px;
+}
+.rotate-45{
+    transform: rotateZ(45deg);
+    margin: 2px 0 -3px !important;
+}
+.rotate-neg45{
+    transform: rotateZ(-45deg);
+}
+header .navbar-light .navbar-toggler{
+    border: none;
+}
+header .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/*about start*/
+.about{
+    
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.about .container{
+    min-height: 100vh;
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .about-item{
+    position: absolute;
+    top: 25%;
+}
+.about .about-title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.25px;
+    padding-bottom: 11px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #15A4FA;
+    margin-bottom: 40px;
+}
+.about .about-text{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    margin-bottom: 62px;
+}
+.about .about-item a{
+    margin-bottom: 176px;
+    letter-spacing: 0.25px;
+    border-color: #15A4FA;
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(50%);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.about .about-item .arrow-down{
+    animation: bounce infinite 1s 0s linear;
+    color: #fff;
+    font-size: 25px;
+}
+
+/*design start*/
+.animation{
+    opacity: 0;
+}
+@keyframes slideDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.slide-down{
+    animation: slideDown 1 0.7s 0s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.design{
+    padding: 40px 0 60px;
+}
+.design .design-title{
+    margin-bottom: 31px;
+}
+.design .design-text{
+    color: #999999;
+}
+
+/*services start*/
+@keyframes slideRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.slide-right{
+    animation: slideRight 1 1s 0s ease;
+    animation-fill-mode: forwards;
+}
+.services{
+    padding: 25px 0;
+}
+.services .services-item span{
+    font-size: 30px;
+    color: #fff;
+    padding: 13px 18px;
+    background: linear-gradient(to right, #48BAFF 50%, #5FC3FF 50% 100%);
+    text-shadow: -1px 1px 1px NaNpx rgba(2,2,2,0.4);
+    margin-bottom: 32px;
+}
+.services .services-item-title{
+    margin-bottom: 22px;
+}
+.services .services-item-text{
+    color: #999999;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+/*work start*/
+.work{
+    padding: 54px 0 38px;
+}
+.work .work-title{
+    margin-bottom: 22px;
+}
+.work .contact-link{
+    margin-bottom: 80px;
+    color: #909090;
+    font-size: 15px;
+    line-height: 23px;
+    transition: 0.4s ease-in-out;
+}
+.work .contact-link:hover{
+    transform: skewY(10deg) scale(1.3);
+    color: purple;
+}
+.work .hover a{
+    background-color: #15A4FA;
+    border-color: #fff;
+}
+.work .work-item figure{
+    position: relative;
+}
+.work .work-item .hover .btn-check:focus + .btn-primary, .btn-primary:focus{
+    box-shadow: none;
+}
+.work .work-item-link:before{
+    content: '';
+    padding-top: 75%;
+    display: block;
+    background-color: rgba(204, 204, 204, 1);
+}
+.work .work-item .hover .fa-link{
+    transform: rotateY(180deg);
+}
+.work .work-item .hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 164, 250, 0.9);
+    display: none;
+}
+.work .work-item:hover .hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*subscribe start*/
+.subscribe{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 28px 0 36px;
+}
+.subscribe .subscribe-item .form-element{
+    background-color: transparent;
+}
+.subscribe .form-group:not(:last-of-type){
+    margin-bottom: 1rem;
+}
+.subscribe .subscribe-text{
+    margin-bottom: 49px;
+    font-size: 15px;
+    color: #999999;
+    line-height: 23px;
+}
+.subscribe .subscribe-title{
+    margin-bottom: 21px;
+}
+.subscribe .form-group button{
+    border-color: #15A4FA;
+    padding: 8px 16px;
+}
+.subscribe .form-control:focus{
+    background-color: transparent;
+}
+.subscribe .form-group .form-element{
+    color: #fff;
+}
+.subscribe-form .error-message{
+    color: #fff;
+    font-style: italic;
+}
+
+/*footer start*/
+footer{
+    padding: 25px 0;
+}
+footer .social a span{
+    padding: 1rem;
+    background-color: #15A4FA;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.5s linear;
+}
+footer .social span.fa-facebook-f:hover{
+    background-color: transparent;
+    color: #166fe5;
+    transform: scale(1.3);
+}
+footer .social span.fa-twitter:hover{
+    background-color: transparent;
+    color: #15A4FA;
+    transform: scale(1.3);
+}
+footer .social span.fa-google-plus-g:hover{
+    background-color: transparent;
+    color: red;
+    transform: scale(1.3);
+}
+footer .social span.fa-linkedin-in:hover{
+    background-color: transparent;
+    color: pink;
+    transform: scale(1.3);
+}
+footer .copyright{
+    font-size: 15px;
+    color: #999999;
+}

@@ -1,0 +1,159 @@
+@media(min-width: 576px){
+    /*SM Breakpoint*/
+    .about .about-item{
+        max-width: 66%;
+    }
+
+
+}
+
+
+@media(min-width: 768px){
+    /*MD Breakpoint*/
+    /*header start*/
+    header{
+        padding: 16px 0;
+    }
+    header .navbar-light .navbar-nav .nav-link{
+        font-size: 14px;
+        line-height: 1rem;
+    }
+
+
+    /*about start*/
+    .about .about-title{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .about .about-text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    /*services start*/
+    .services .services-item-title{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .services .services-item span{
+        padding: 15px 25px;
+    }
+    /*subscribe start*/
+    .subscribe{
+        padding: 56px 0 72px;
+    }
+    .subscribe .form-group button{
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+
+@media(min-width: 992px){
+    /*LG Breakpoint*/
+    /*header start*/
+    header .navbar-light .navbar-nav .nav-link{
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+    header .nav-item:not(:first-of-type){
+        margin-left: 30px;
+    }
+    
+    .about .about-item{
+        max-width: 50%;
+    }
+
+    /*design start*/
+    .design{
+        padding: 60px 0 85px;
+    }
+    .design .design-text{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    /*work start*/
+    .work{
+        padding: 81px 0 76px;
+    }
+}
+
+
+@media(min-width: 1200px){
+    /*XL Breakpoint*/
+    .container{
+        width: 1170px;
+    }
+    /*header start*/
+    header{
+        padding: 32px 0;
+    }
+    header .nav-item:not(:first-of-type){
+        margin-left: 50px;
+    }
+    /*about start*/
+
+    .about .about-title{
+        font-size: 100px;
+        line-height: 110px;
+    }
+    .about .about-text{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .about .about-item a{
+        font-size: 20px;
+        line-height: 47px;
+        padding: 6px 18px;
+    }
+    .about .about-item .arrow-down{
+        font-size: 35px;
+    }
+
+    /*design start*/
+    .design{
+        padding: 81px 0 110px;
+    }
+
+    /*work start*/
+    .work{
+        padding: 81px 0 116px;
+    }
+
+    /*subscribe start*/
+    .subscribe{
+        padding: 84px 0 108px;
+    }
+    .subscribe .form-group button{
+        padding: 8px 50px;
+    }
+
+}
+
+
+@media(min-width: 1400px){
+    /*XXL Breakpoint*/
+    /*header start*/
+    header .nav-item:not(:first-of-type){
+        margin-left: 70px;
+    }
+
+    /*about start*/
+    .about .about-title{
+        font-size: 120px;
+        line-height: 130px;
+    }
+    .about .about-text{
+        font-size: 20px;
+        line-height: 47px;
+    }
+
+    /*services start*/
+    .services .services-item span{
+        font-size: 40px;
+        padding: 25px 35px;
+    }
+
+}
